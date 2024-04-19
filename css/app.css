@@ -1,11 +1,17 @@
 html {
     scroll-behavior: smooth !important;
-    scrollbar-width: none !important;
 }
 
 body {
     font-family: 'Josefin Sans', sans-serif !important;
     padding: 0 !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+    color : #f99944
+}
+
+body::-webkit-scrollbar {
+    display: none !important;
 }
 
 .font-esthetic {
@@ -18,11 +24,25 @@ body {
     color: #ffffff !important;
 }
 
-.img-crop {
+.img-crop2 {
     width: 200px; /* Lebar gambar */
     height: 200px; /* Tinggi gambar */
     overflow: hidden; /* Mengatur overflow */
     border-radius: 50%; /* Membuat gambar menjadi bulat */
+}
+
+.img-crop2 img {
+    width: 100%; /* Membuat gambar memenuhi lebar kotak gambar */
+    height: 100%; /* Membuat gambar memenuhi tinggi kotak gambar */
+    display: block; /* Membuat gambar menjadi blok */
+    object-fit: cover; /* Menjaga proporsi gambar */
+
+}
+.img-crop {
+    width: 200px; /* Lebar gambar */
+    height: 200px; /* Tinggi gambar */
+    overflow: hidden; /* Mengatur overflow */
+    border-radius: 0; /* Membuat gambar menjadi kotak */
 }
 
 .img-crop img {
@@ -113,13 +133,16 @@ body {
 }
 
 .dark-section {
-    background-color: #111111 !important;
+    background-color: #5F9EA0 !important;
     margin-top: -0.5rem;
     margin-bottom: -0.5rem;
 }
 
 footer {
-    background-color: #111111 !important;
+    background-color: #3D657F !important;
     margin-top: -0.5rem;
     padding-bottom: 5rem;
+}
+.light-section{
+    background-color : #3D657F
 }
